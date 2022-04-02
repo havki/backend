@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "Категории",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "reczepties": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recipe.recipe",
+      "mappedBy": "kategorii"
+    }
+  }
+}
