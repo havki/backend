@@ -25,6 +25,12 @@
     },
     "country": {
       "type": "string"
+    },
+    "reczepties": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recipe.recipe",
+      "mappedBy": "profile"
     }
   }
 }
